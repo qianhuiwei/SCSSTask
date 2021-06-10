@@ -1,0 +1,21 @@
+@mixin banner-button($bg) {
+    background: $bg;
+    border: none;
+    color: $text-color-light;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 12px;
+
+    &:hover{
+        background: darken($bg, 10%);
+    }
+}
+
+@mixin mobile {
+    @media(max-width:768px) {
+        @content
+    }
+}
+
+

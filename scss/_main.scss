@@ -1,0 +1,94 @@
+.banner {
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        color:$text-color-secondary;
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    .btn-main{
+        @include banner-button($btn-bg-primary);
+    }
+
+    .btn-secondary{
+        @include banner-button($btn-bg-secondary);
+    }
+}
+
+.album{
+    background: #f8f9fa;
+    padding-top: 48px;
+    padding-bottom: 60px;
+
+    .album-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .list-item {
+            width:30%;
+            margin-bottom: 16px;
+            margin-left: 8px;
+            margin-right: 8px;
+
+            @include mobile {
+                width:100%;
+            }
+
+            .thumbnail {
+                height: 245px;
+                background: #515857;
+                color:$text-color-light;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .info {
+                background: white;
+                border: 2px solid #E5EAE9;
+                padding: 16px;
+
+                .description {
+                    padding-bottom: 16px;
+                }
+
+                .detail {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .btn-action {
+                        display: flex;
+                        border: 1px solid $text-color-secondary;
+                        border-radius: 4px;
+
+                        a{  
+                            color: $text-color-secondary;
+                            padding: 8px;
+                            
+                            &:hover{
+                                background: $text-color-secondary;
+                                color:white;
+                            }
+                        }
+                    }
+                    
+                    .length {
+                        color:$text-color-secondary;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+

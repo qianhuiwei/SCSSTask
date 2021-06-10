@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    p {
+        color: $text-color-secondary;
+    }
+
+    a {
+        color: $link-color;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
