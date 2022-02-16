@@ -10,7 +10,7 @@ https://qianhuiwei.github.io/SCSSTask/
 
 
 ## Features
-* Managae CSS with SCSS
-* Developed desktop first RWD with pure CSS.
+* Managed CSS with SCSS.
+* Developed desktop-first RWD with pure CSS.
 * Imported icons from [Font Awesome](https://fontawesome.com/icons).
 * Tested with Chrome and Safari.
